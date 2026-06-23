@@ -1,0 +1,9 @@
+.git
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+data_redrob_hackathon/candidates.jsonl
+data_redrob_hackathon/*.docx
+submission.csv

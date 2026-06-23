@@ -1,0 +1,51 @@
+# Redrob Hackathon — Submission Metadata
+
+team_name: "Natanyx"
+
+primary_contact:
+  name: "Naman Mani"
+  email: "namanmani024@gmail.com"
+  phone: "+91-XXXXXXXXXX"
+
+team_members:
+  - name: "Naman Mani"
+    email: "namanmani024@gmail.com"
+    role: "ML Engineer"
+
+github_repo: "https://github.com/YOUR_USERNAME/YOUR_REPO"
+sandbox_link: "https://hub.docker.com/r/namanmani/natanyx-redrob-ranker"
+reproduce_command: "python rank.py --candidates ./data_redrob_hackathon/candidates.jsonl --out ./submission.csv"
+
+compute:
+  platform: "Local Linux machine"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.11"
+  os: "Linux"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+ai_tools_used:
+  - "ChatGPT"
+
+ai_usage_summary: |
+  Used ChatGPT/Codex for validation support.
+  The final ranker is deterministic and does not call any AI service during ranking.
+
+methodology_summary: |
+  Deterministic feature-engineered ranker for the Senior AI Engineer JD. The model
+  combines production search/retrieval/ranking evidence, senior hands-on ML career
+  fit, product shipping signals, logistics, education/open-source validation, and
+  Redrob behavioral availability signals. Explicit penalties reduce keyword-stuffed
+  non-AI profiles, services-only backgrounds, stale candidates, poor availability,
+  and impossible-looking skill claims. The ranking step is standard-library Python,
+  CPU-only, streaming JSONL, and network-free.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: false
