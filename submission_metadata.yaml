@@ -12,7 +12,7 @@ team_members:
     email: "namanmani024@gmail.com"
     role: "ML Engineer"
 
-github_repo: "https://github.com/YOUR_USERNAME/YOUR_REPO"
+github_repo: "https://github.com/thelegendaryarticuno/Devils_den_india_runs_hackathon_"
 sandbox_link: "https://hub.docker.com/r/namanmani/natanyx-redrob-ranker"
 reproduce_command: "python rank.py --candidates ./data_redrob_hackathon/candidates.jsonl --out ./submission.csv"
 
